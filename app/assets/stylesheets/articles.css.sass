@@ -6,6 +6,7 @@ $darkyellow: #6D5718
 $yellow: #9A7A2C
 $lightyellow: #D6C7A8
 $volkhovfont: 'volkhov', serif
+$droidsansfont: 'Droid sans', sans-serif
 
 // Algemeen
 img 
@@ -15,7 +16,7 @@ img
 
 html, body
 	background: url(/assets/default/background.png) repeat
-	font-family: Arial, Helvetica, Sans-serif
+	font-family: $droidsansfont
 	font-size: 12pt
 	margin: 0
 
@@ -32,6 +33,22 @@ html, body
 .block
 	float: left
 
+h1
+	font-size: 15pt
+	font-family: $volkhovfont
+	text-transform: uppercase
+	color: $yellow
+	margin: 0
+	padding: 0
+
+h2
+	font-size: 14pt
+	font-family: $volkhovfont
+	color: $yellow
+	margin: 0
+	padding: 0
+
+// Header elements
 header
 	height: 67px
 	background: url(/assets/default/header-end-line.png) repeat-x bottom
@@ -85,6 +102,7 @@ header
 				a:hover
 					color: $yellow
 
+// Main content Home
 #main-content
 	.container
 		.top-quote
@@ -101,6 +119,16 @@ header
 		#home-content-left
 			float: left
 			width: 700px
+			#home-content-main-text
+				padding: 0 0 27px 0
+				width: 700px
+				background: url(/assets/home/main-text-h_line.png) no-repeat bottom
+				text-align: justify
+			#home-content-miniblog
+				margin: 20px 0 0 0 
+				#miniblog-inner
+					article
+						margin: 10px 0 0 0
 		#home-content-right
 			float: right
 			width: 240px
