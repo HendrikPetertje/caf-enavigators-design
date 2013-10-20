@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+%html
+	%head
+		%title
+			Sasssite
+
+		= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+		= stylesheet_link_tag	"http://fonts.googleapis.com/css?family=Volkhov:400,400italic,700,700italic"
+		= javascript_include_tag "application", "data-turbolinks-track" => true
+		= csrf_meta_tags
+	%body
+
+		%header
+			.container
+				#header-left
+					.logo
+						= link_to "/" do
+							= image_tag "/assets/default/cafenavigators-logo_high.png"
+
+				#header-right
+					#header-right-nav
+						%ul
+							%li#nav-active
+								= link_to 'Home', '/'
+							%li
+								= link_to 'Slowchat', '/slowchat'
+							%li
+								= link_to 'De Deur', '/doorway'
+
+					#header-right-sessioninfo
+						#header-usericon
+							= link_to '/dashboard' do
+								= image_tag "/assets/default/default-usericon.png"
+						#header-username
+							= link_to '/dashboard' do
+								Jesse Lantinga
+
+		%section#main-content
+			.container
+				.top-quote
+					= image_tag '/assets/home/top-quote_large.png'
+				.top-image
+					= image_tag '/assets/home/top-image.jpg'
+			
+			.container#home-content-inner
+				#home-content-left
+					#home-content-main-text.block
+						main-text inhoud
+				#home-content-right
+					content rechts
+				.cleardiv

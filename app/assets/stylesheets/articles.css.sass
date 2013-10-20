@@ -1,0 +1,106 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$darkyellow: #6D5718
+$yellow: #9A7A2C
+$lightyellow: #D6C7A8
+$volkhovfont: 'volkhov', serif
+
+// Algemeen
+img 
+	border: 0
+	margin: 0
+	padding: 0
+
+html, body
+	background: url(/assets/default/background.png) repeat
+	font-family: Arial, Helvetica, Sans-serif
+	font-size: 12pt
+	margin: 0
+
+.container
+	width: 960px
+	margin: 0 auto
+
+.cleardiv
+	clear:both
+
+#main-content
+	margin: 20px 0 0 0
+
+.block
+	float: left
+
+header
+	height: 67px
+	background: url(/assets/default/header-end-line.png) repeat-x bottom
+
+	#header-left
+		float: left
+
+		.logo 
+			padding: 10px 0
+			img
+				width: 185px
+				height: 40px
+
+	#header-right
+		float: right
+		font-family: $volkhovfont
+		font-weight: bold
+		margin: 15px 0 0 0
+
+		#header-right-nav
+			float: left
+			ul
+				list-style-type: none
+				margin: 0
+				li
+					float: left
+					margin: 0 5px
+					padding: 5px
+				a
+					color: $darkyellow
+					text-decoration: none
+				a:hover
+					color: $yellow	
+				#nav-active
+					background: $yellow
+					a
+						color: #FFF
+		#header-right-sessioninfo
+			float: left
+			padding: 0 0 0 11px
+			margin: 5px 0
+			background: url(/assets/default/nav-seperator.png) top left no-repeat
+			#header-usericon
+				float: left
+			#header-username
+				float: left
+				margin: 0 0 0 10px
+				a
+					color: $darkyellow
+					text-decoration: none
+				a:hover
+					color: $yellow
+
+#main-content
+	.container
+		.top-quote
+			img
+				width: 960px
+				height: 26px
+		.top-image
+			img
+				width: 960px
+				margin: 20px 0 0 0
+
+	#home-content-inner
+		margin-top: 20px
+		#home-content-left
+			float: left
+			width: 700px
+		#home-content-right
+			float: right
+			width: 240px
