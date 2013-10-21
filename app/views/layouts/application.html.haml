@@ -36,7 +36,7 @@
 								Jesse Lantinga
 
 		%section#main-content
-			.container
+			.container#home-page
 				.top-quote
 					= image_tag '/assets/home/top-quote_large.png'
 				.top-image
@@ -84,6 +84,8 @@
 
 							.cleardiv 
 								/ clear's articles in miniblog
+							#all-blogs-link
+								= link_to '', 'blogs'
 
 				#home-content-right
 					content rechts
