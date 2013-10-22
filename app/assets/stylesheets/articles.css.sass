@@ -43,8 +43,6 @@ html, body
 .hidden
 	display: none
 
-.activetile
-	background-position-y: bottom
 
 // Extenders
 .shadow
@@ -199,7 +197,8 @@ header
 				cursor: pointer
 			#tile1
 				margin: 0 20px 0 0
-				background: url(/assets/home/square-content-button-home.jpg) no-repeat top
+				background: url(/assets/home/square-content-button-home.jpg) no-repeat
+				background-position: top
 				cursor: pointer
 				&:hover
 					background: url(/assets/home/square-content-button-home.jpg) no-repeat bottom
@@ -230,3 +229,8 @@ header
 				background: url(/assets/home/square-content-button-location.jpg) no-repeat top
 				&:hover
 					background: url(/assets/home/square-content-button-location.jpg) no-repeat bottom
+			.activetile
+				background-position: bottom !important
+
+
+// overiding styles
